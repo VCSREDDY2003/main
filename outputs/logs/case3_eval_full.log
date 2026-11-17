@@ -1,0 +1,42 @@
+C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\transformer.py:502: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\NestedTensorImpl.cpp:180.)
+  output = torch._nested_tensor_from_mask(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 7370.45it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Traceback (most recent call last):
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\evaluation\generate_results.py", line 390, in <module>
+    main()
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\evaluation\generate_results.py", line 296, in main
+    "bert_score_f1": bert_score_f1(sum_hyp_text, sum_ref_text),
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\evaluation\metrics.py", line 302, in bert_score_f1
+    _, _, f1 = scorer.score(hypotheses, references)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\bert_score\scorer.py", line 220, in score
+    all_preds = bert_cos_score_idf(
+                ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\bert_score\utils.py", line 616, in bert_cos_score_idf
+    embs, masks, padded_idf = get_bert_embedding(
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\bert_score\utils.py", line 445, in get_bert_embedding
+    padded_sens, padded_idf, lens, mask = collate_idf(
+                                          ^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\bert_score\utils.py", line 409, in collate_idf
+    arr = [sent_encode(tokenizer, a) for a in arr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\bert_score\utils.py", line 192, in sent_encode
+    return tokenizer.build_inputs_with_special_tokens([])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\transformers\tokenization_utils_base.py", line 1301, in __getattr__
+    raise AttributeError(f"{self.__class__.__name__} has no attribute {key}")
+AttributeError: BertTokenizer has no attribute build_inputs_with_special_tokens

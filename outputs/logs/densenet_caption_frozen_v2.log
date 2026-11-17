@@ -1,0 +1,40 @@
+C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_densenet_caption_only.py:48: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.backbone.load_state_dict(torch.load(ckpt, map_location="cpu"))
+[densenet_style+caption(frozen-backbone)] backbone_params: 2,258,009  total_params(+norm+LMMDecoder): 19,515,765
+[densenet_style+caption(frozen)] epoch 1/20  train_loss=11.4013  val_loss=10.3937
+[densenet_style+caption(frozen)] epoch 2/20  train_loss=10.0020  val_loss=9.9793
+[densenet_style+caption(frozen)] epoch 3/20  train_loss=9.4412  val_loss=9.8067
+[densenet_style+caption(frozen)] epoch 4/20  train_loss=9.0394  val_loss=9.7443
+[densenet_style+caption(frozen)] epoch 5/20  train_loss=8.7092  val_loss=9.7524
+[densenet_style+caption(frozen)] epoch 6/20  train_loss=8.4220  val_loss=9.7410
+[densenet_style+caption(frozen)] epoch 7/20  train_loss=8.1689  val_loss=9.7951
+[densenet_style+caption(frozen)] epoch 8/20  train_loss=7.9528  val_loss=9.8313
+[densenet_style+caption(frozen)] epoch 9/20  train_loss=7.7638  val_loss=9.8724
+[densenet_style+caption(frozen)] epoch 10/20  train_loss=7.6024  val_loss=9.9009
+[densenet_style+caption(frozen)] epoch 11/20  train_loss=7.4597  val_loss=9.9506
+[densenet_style+caption(frozen)] epoch 12/20  train_loss=7.3329  val_loss=9.9988
+[densenet_style+caption(frozen)] epoch 13/20  train_loss=7.2174  val_loss=10.0359
+[densenet_style+caption(frozen)] epoch 14/20  train_loss=7.1210  val_loss=10.0580
+[densenet_style+caption(frozen)] epoch 15/20  train_loss=7.0263  val_loss=10.1651
+[densenet_style+caption(frozen)] epoch 16/20  train_loss=6.9461  val_loss=10.1564
+[densenet_style+caption(frozen)] epoch 17/20  train_loss=6.8692  val_loss=10.2189
+[densenet_style+caption(frozen)] epoch 18/20  train_loss=6.7996  val_loss=10.2356
+[densenet_style+caption(frozen)] epoch 19/20  train_loss=6.7332  val_loss=10.2869
+[densenet_style+caption(frozen)] epoch 20/20  train_loss=6.6711  val_loss=10.3142
+[densenet_style+caption(frozen)] Best epoch: 6 (val_loss=9.7410) -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\model\baseline_densenet_style_withcap_combined_best.pt
+C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_densenet_caption_only.py:231: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt_path, map_location=device))
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 4235.00it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_metrics_baseline_densenet_style_withcap_combined.json

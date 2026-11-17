@@ -1,0 +1,824 @@
+=== EVAL: IAT+lightCNN - ROCO v1 ===
+C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\transformer.py:502: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\NestedTensorImpl.cpp:180.)
+  output = torch._nested_tensor_from_mask(
+C:\Users\kalya\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[ablation] evaluating with disable_lstm=False disable_gan=True disable_iat=False (read from checkpoint)
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 5207.79it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote full results metrics -> outputs/logs/test_metrics_lightcnn_roco.json
+{
+  "classification": {
+    "binary": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_per_class": [
+        1.0,
+        0.0
+      ],
+      "recall_per_class": [
+        1.0,
+        0.0
+      ],
+      "f1_per_class": [
+        1.0,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          2976,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 1.0,
+      "auroc_macro_ovr": null
+    },
+    "3class": {
+      "accuracy": 0.9509408602150538,
+      "precision": 0.924949146141544,
+      "recall": 0.9492439553021124,
+      "f1": 0.9361594087057916,
+      "precision_per_class": [
+        0.8683229813664596,
+        0.9815753109166283,
+        0.0
+      ],
+      "recall_per_class": [
+        0.945872801082544,
+        0.9526151095216808,
+        0.0
+      ],
+      "f1_per_class": [
+        0.905440414507772,
+        0.9668784029038112,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          699,
+          40,
+          0
+        ],
+        [
+          106,
+          2131,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.9492439553021124,
+      "auroc_macro_ovr": null
+    },
+    "5class": {
+      "accuracy": 0.8726478494623656,
+      "precision": 0.8713016305681865,
+      "recall": 0.8718552895265906,
+      "f1": 0.8709999116476139,
+      "precision_per_class": [
+        0.8759398496240601,
+        0.8492753623188406,
+        0.8422535211267606,
+        0.9177377892030848,
+        0.0
+      ],
+      "recall_per_class": [
+        0.945872801082544,
+        0.8060522696011004,
+        0.8070175438596491,
+        0.9284785435630689,
+        0.0
+      ],
+      "f1_per_class": [
+        0.9095640858815875,
+        0.8270995059985886,
+        0.8242591316333563,
+        0.9230769230769231,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          699,
+          10,
+          21,
+          9,
+          0
+        ],
+        [
+          43,
+          586,
+          74,
+          24,
+          0
+        ],
+        [
+          34,
+          78,
+          598,
+          31,
+          0
+        ],
+        [
+          22,
+          16,
+          17,
+          714,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.8718552895265906,
+      "auroc_macro_ovr": null
+    }
+  },
+  "captioning": {
+    "caption": {
+      "bleu1": 0.1873255445553435,
+      "bleu4": 0.08647244563961705,
+      "meteor": 0.16716454511645085,
+      "rouge_1": 0.2011608423431371,
+      "rouge_l": 0.18108506793347307,
+      "cider_d": 0.2282583656563664,
+      "spice": 0.08125293070651401,
+      "bert_score_f1": 0.7303151536601397
+    },
+    "summary": {
+      "bleu1": 0.18767122776275444,
+      "bleu4": 0.08704571418570388,
+      "meteor": 0.1703153961416927,
+      "rouge_1": 0.20496141141732774,
+      "rouge_l": 0.18236346485112329,
+      "cider_d": 0.23365225370522064,
+      "spice": 0.08251224316093862,
+      "bert_score_f1": 0.7304884394063237
+    }
+  },
+  "decoding": {
+    "beam_width": 5
+  },
+  "generative": {
+    "ssim_iat_vs_original": 0.969253707316614,
+    "ssim_gan_vs_original": 0.0,
+    "fid_gan_vs_real": null,
+    "fvd": null
+  },
+  "efficiency": {
+    "batch_size": 16,
+    "ms_per_sample": 8.02791812493524,
+    "samples_per_sec": 124.56529631187124
+  },
+  "ablation": {
+    "disable_lstm": false,
+    "disable_gan": true,
+    "disable_iat": false
+  },
+  "noise_std": 0.0,
+  "mask_caption": false
+}
+Wrote 2976 per-sample results -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_results.json
+Wrote 5 qualitative greedy-vs-beam samples -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\qualitative_greedy_vs_beam.json
+Wrote qualitative result grid -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\plots\results_grid.png
+=== EVAL: IAT+macroCNN(deep) - ROCO v1 ===
+C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\transformer.py:502: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\NestedTensorImpl.cpp:180.)
+  output = torch._nested_tensor_from_mask(
+C:\Users\kalya\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[ablation] evaluating with disable_lstm=False disable_gan=True disable_iat=False (read from checkpoint)
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 8877.02it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote full results metrics -> outputs/logs/test_metrics_macrocnn_roco.json
+{
+  "classification": {
+    "binary": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_per_class": [
+        1.0,
+        0.0
+      ],
+      "recall_per_class": [
+        1.0,
+        0.0
+      ],
+      "f1_per_class": [
+        1.0,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          2976,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 1.0,
+      "auroc_macro_ovr": null
+    },
+    "3class": {
+      "accuracy": 0.9543010752688172,
+      "precision": 0.9294500203161293,
+      "recall": 0.9532913970539754,
+      "f1": 0.9404819255847605,
+      "precision_per_class": [
+        0.8754669987546699,
+        0.9834330418775886,
+        0.0
+      ],
+      "recall_per_class": [
+        0.9512855209742895,
+        0.9552972731336612,
+        0.0
+      ],
+      "f1_per_class": [
+        0.9118028534370947,
+        0.9691609977324263,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          703,
+          36,
+          0
+        ],
+        [
+          100,
+          2137,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.9532913970539754,
+      "auroc_macro_ovr": null
+    },
+    "5class": {
+      "accuracy": 0.8961693548387096,
+      "precision": 0.8969152992341486,
+      "recall": 0.8953113080608741,
+      "f1": 0.8948023552714508,
+      "precision_per_class": [
+        0.8736059479553904,
+        0.9126365054602185,
+        0.8609271523178808,
+        0.9404915912031048,
+        0.0
+      ],
+      "recall_per_class": [
+        0.9539918809201624,
+        0.8046767537826685,
+        0.8771929824561403,
+        0.9453836150845254,
+        0.0
+      ],
+      "f1_per_class": [
+        0.9120310478654593,
+        0.8552631578947368,
+        0.8689839572192514,
+        0.9429312581063554,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          705,
+          5,
+          16,
+          13,
+          0
+        ],
+        [
+          56,
+          585,
+          64,
+          22,
+          0
+        ],
+        [
+          31,
+          49,
+          650,
+          11,
+          0
+        ],
+        [
+          15,
+          2,
+          25,
+          727,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.8953113080608741,
+      "auroc_macro_ovr": null
+    }
+  },
+  "captioning": {
+    "caption": {
+      "bleu1": 0.06696756803077059,
+      "bleu4": 0.0560123731715559,
+      "meteor": 0.09898080278342514,
+      "rouge_1": 0.14431881574361477,
+      "rouge_l": 0.13836044468182482,
+      "cider_d": 0.2522069643497623,
+      "spice": 0.08147437730052333,
+      "bert_score_f1": 0.7038247541245354
+    },
+    "summary": {
+      "bleu1": 0.13718150265991574,
+      "bleu4": 0.07676953582234433,
+      "meteor": 0.14219100706461776,
+      "rouge_1": 0.1848432163456079,
+      "rouge_l": 0.16907097709468397,
+      "cider_d": 0.24215365888822615,
+      "spice": 0.08548765886544582,
+      "bert_score_f1": 0.7228093658987139
+    }
+  },
+  "decoding": {
+    "beam_width": 5
+  },
+  "generative": {
+    "ssim_iat_vs_original": 0.9793549644690688,
+    "ssim_gan_vs_original": 0.0,
+    "fid_gan_vs_real": null,
+    "fvd": null
+  },
+  "efficiency": {
+    "batch_size": 16,
+    "ms_per_sample": 8.686446249976143,
+    "samples_per_sec": 115.12187737335582
+  },
+  "ablation": {
+    "disable_lstm": false,
+    "disable_gan": true,
+    "disable_iat": false
+  },
+  "noise_std": 0.0,
+  "mask_caption": false
+}
+Wrote 2976 per-sample results -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_results.json
+Wrote 5 qualitative greedy-vs-beam samples -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\qualitative_greedy_vs_beam.json
+Wrote qualitative result grid -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\plots\results_grid.png
+=== EVAL: CNN+IATnew (micro, noGAN) - combined ===
+C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\transformer.py:502: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\NestedTensorImpl.cpp:180.)
+  output = torch._nested_tensor_from_mask(
+C:\Users\kalya\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[ablation] evaluating with disable_lstm=False disable_gan=True disable_iat=False (read from checkpoint)
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 2520.25it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote full results metrics -> outputs/logs/test_metrics_iatnew_combined.json
+{
+  "classification": {
+    "binary": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_per_class": [
+        1.0,
+        0.0
+      ],
+      "recall_per_class": [
+        1.0,
+        0.0
+      ],
+      "f1_per_class": [
+        1.0,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          4767,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 1.0,
+      "auroc_macro_ovr": null
+    },
+    "3class": {
+      "accuracy": 0.9773442416614223,
+      "precision": 0.9660643704121965,
+      "recall": 0.9742808145444584,
+      "f1": 0.9700789609128836,
+      "precision_per_class": [
+        0.9428571428571428,
+        0.9892715979672502,
+        0.0
+      ],
+      "recall_per_class": [
+        0.9681475272422464,
+        0.9804141018466704,
+        0.0
+      ],
+      "f1_per_class": [
+        0.9553349875930521,
+        0.984822934232715,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          1155,
+          38,
+          0
+        ],
+        [
+          70,
+          3504,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.9742808145444584,
+      "auroc_macro_ovr": null
+    },
+    "5class": {
+      "accuracy": 0.9500734214390602,
+      "precision": 0.9497371020817009,
+      "recall": 0.9495156712437987,
+      "f1": 0.9495050669534214,
+      "precision_per_class": [
+        0.9435351882160393,
+        0.9434977578475336,
+        0.9337248322147651,
+        0.9781906300484653,
+        0.0
+      ],
+      "recall_per_class": [
+        0.9664710813076278,
+        0.9116117850953206,
+        0.948849104859335,
+        0.9711307137129109,
+        0.0
+      ],
+      "f1_per_class": [
+        0.9548654244306418,
+        0.9272807404142794,
+        0.9412262156448203,
+        0.9746478873239437,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          1153,
+          18,
+          19,
+          3,
+          0
+        ],
+        [
+          40,
+          1052,
+          45,
+          17,
+          0
+        ],
+        [
+          11,
+          42,
+          1113,
+          7,
+          0
+        ],
+        [
+          18,
+          3,
+          15,
+          1211,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.9495156712437987,
+      "auroc_macro_ovr": null
+    }
+  },
+  "captioning": {
+    "caption": {
+      "bleu1": 0.23893964934935832,
+      "bleu4": 0.11919370872909892,
+      "meteor": 0.20247706062093287,
+      "rouge_1": 0.24809419503616972,
+      "rouge_l": 0.2268671122285093,
+      "cider_d": 0.36866908847334984,
+      "spice": 0.11845297496776666,
+      "bert_score_f1": 0.7397453973624797
+    },
+    "summary": {
+      "bleu1": 0.2207515630133847,
+      "bleu4": 0.11043218106899236,
+      "meteor": 0.19709977287817146,
+      "rouge_1": 0.23985666915472745,
+      "rouge_l": 0.21816210891933596,
+      "cider_d": 0.35181716987958284,
+      "spice": 0.11528009240425212,
+      "bert_score_f1": 0.7382243066021272
+    }
+  },
+  "decoding": {
+    "beam_width": 5
+  },
+  "generative": {
+    "ssim_iat_vs_original": 0.9816374984763613,
+    "ssim_gan_vs_original": 0.0,
+    "fid_gan_vs_real": null,
+    "fvd": null
+  },
+  "efficiency": {
+    "batch_size": 16,
+    "ms_per_sample": 10.070393125079136,
+    "samples_per_sec": 99.30098930394456
+  },
+  "ablation": {
+    "disable_lstm": false,
+    "disable_gan": true,
+    "disable_iat": false
+  },
+  "noise_std": 0.0,
+  "mask_caption": false
+}
+Wrote 4767 per-sample results -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_results.json
+Wrote 5 qualitative greedy-vs-beam samples -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\qualitative_greedy_vs_beam.json
+Wrote qualitative result grid -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\plots\results_grid.png
+=== EVAL: IAT+GAM (micro, gammem) - combined ===
+C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\transformer.py:502: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\NestedTensorImpl.cpp:180.)
+  output = torch._nested_tensor_from_mask(
+C:\Users\kalya\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 2317.68it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote full results metrics -> outputs/logs/test_metrics_gam_combined.json
+{
+  "classification": {
+    "binary": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_per_class": [
+        1.0,
+        0.0
+      ],
+      "recall_per_class": [
+        1.0,
+        0.0
+      ],
+      "f1_per_class": [
+        1.0,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          4767,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 1.0,
+      "auroc_macro_ovr": null
+    },
+    "3class": {
+      "accuracy": 0.9786028949024543,
+      "precision": 0.9681653273023831,
+      "recall": 0.9753994223907321,
+      "f1": 0.9717103180883051,
+      "precision_per_class": [
+        0.9467649467649467,
+        0.9895657078398196,
+        0.0
+      ],
+      "recall_per_class": [
+        0.9689857502095558,
+        0.9818130945719082,
+        0.0
+      ],
+      "f1_per_class": [
+        0.9577464788732394,
+        0.9856741573033708,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          1156,
+          37,
+          0
+        ],
+        [
+          65,
+          3509,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.9753994223907321,
+      "auroc_macro_ovr": null
+    },
+    "5class": {
+      "accuracy": 0.9490245437382001,
+      "precision": 0.9487119835795268,
+      "recall": 0.9484269168004735,
+      "f1": 0.9484407971006631,
+      "precision_per_class": [
+        0.9489291598023064,
+        0.9449954914337241,
+        0.931323283082077,
+        0.9696,
+        0.0
+      ],
+      "recall_per_class": [
+        0.9656328583403185,
+        0.9081455805892548,
+        0.947996589940324,
+        0.9719326383319968,
+        0.0
+      ],
+      "f1_per_class": [
+        0.9572081429164936,
+        0.9262041537781706,
+        0.9395859738065061,
+        0.9707649179014818,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          1152,
+          14,
+          19,
+          8,
+          0
+        ],
+        [
+          37,
+          1048,
+          49,
+          20,
+          0
+        ],
+        [
+          11,
+          40,
+          1112,
+          10,
+          0
+        ],
+        [
+          14,
+          7,
+          14,
+          1212,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.9484269168004735,
+      "auroc_macro_ovr": null
+    }
+  },
+  "captioning": {
+    "caption": {
+      "bleu1": 0.21692026886914942,
+      "bleu4": 0.1064550272776511,
+      "meteor": 0.2134933214087731,
+      "rouge_1": 0.25561105599020767,
+      "rouge_l": 0.23735726016725606,
+      "cider_d": 0.4243669304718822,
+      "spice": 0.1357459532005376,
+      "bert_score_f1": 0.7403531416571756
+    },
+    "summary": {
+      "bleu1": 0.2253492787204024,
+      "bleu4": 0.11266638142927182,
+      "meteor": 0.21537131558995512,
+      "rouge_1": 0.26466668135704274,
+      "rouge_l": 0.24263165411523296,
+      "cider_d": 0.4447799582346272,
+      "spice": 0.13765457669383432,
+      "bert_score_f1": 0.7439234228159797
+    }
+  },
+  "decoding": {
+    "beam_width": 5
+  },
+  "generative": {
+    "ssim_iat_vs_original": 0.9909192161672067,
+    "ssim_gan_vs_original": 0.18272850877486618,
+    "fid_gan_vs_real": 362.1029441633587,
+    "fvd": null
+  },
+  "efficiency": {
+    "batch_size": 16,
+    "ms_per_sample": 23.116078749990265,
+    "samples_per_sec": 43.259932223600906
+  },
+  "ablation": {
+    "disable_lstm": false,
+    "disable_gan": false,
+    "disable_iat": false
+  },
+  "noise_std": 0.0,
+  "mask_caption": false
+}
+Wrote 4767 per-sample results -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_results.json
+Wrote 5 qualitative greedy-vs-beam samples -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\qualitative_greedy_vs_beam.json
+Wrote qualitative result grid -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\plots\results_grid.png
+=== full metrics eval queue complete ===

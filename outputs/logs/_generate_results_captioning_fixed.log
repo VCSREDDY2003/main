@@ -1,0 +1,66 @@
+C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\transformer.py:502: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\NestedTensorImpl.cpp:180.)
+  output = torch._nested_tensor_from_mask(
+Wrote full results metrics -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_metrics.json
+{
+  "classification": {
+    "binary": {
+      "accuracy": 0.6965484180249281,
+      "precision": 0.5953440976225786,
+      "recall": 0.537815531571112,
+      "f1": 0.5163477892117869
+    },
+    "3class": {
+      "accuracy": 0.6599780851938091,
+      "precision": 0.5803230472755537,
+      "recall": 0.6330257503427025,
+      "f1": 0.5410249484352431
+    },
+    "5class": {
+      "accuracy": 0.6357348308450897,
+      "precision": 0.6034157442763063,
+      "recall": 0.7146692989209471,
+      "f1": 0.6051541808310826
+    }
+  },
+  "captioning": {
+    "caption": {
+      "bleu1": 0.23547133928475572,
+      "bleu4": 0.11976224134704573,
+      "meteor": 0.17507751021753204,
+      "rouge_l": 0.20115393754760388,
+      "cider_d": 0.256182787178577,
+      "spice": 0.08654878319266548
+    },
+    "summary": {
+      "bleu1": 0.2295080438702632,
+      "bleu4": 0.11948600211627526,
+      "meteor": 0.1699236199916574,
+      "rouge_l": 0.197269859777932,
+      "cider_d": 0.24794658668169609,
+      "spice": 0.08371315332500916
+    }
+  },
+  "decoding": {
+    "beam_width": 1
+  },
+  "generative": {
+    "ssim_iat_vs_original": 0.5882980018560362,
+    "ssim_gan_vs_original": 0.1503135614823407,
+    "fid_gan_vs_real": 432.19389358237396,
+    "fvd": null
+  },
+  "efficiency": {
+    "batch_size": 16,
+    "ms_per_sample": 9.027501875061716,
+    "samples_per_sec": 110.77261615004245
+  },
+  "ablation": {
+    "disable_lstm": false,
+    "disable_gan": false,
+    "disable_iat": false
+  },
+  "noise_std": 0.0,
+  "mask_caption": false
+}
+Wrote 14602 per-sample results -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_results.json
+Wrote 0 qualitative greedy-vs-beam samples -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\qualitative_greedy_vs_beam.json

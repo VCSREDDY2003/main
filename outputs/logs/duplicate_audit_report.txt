@@ -1,0 +1,79 @@
+Total images audited: 97333
+Missing/unreadable: 0
+Exact-duplicate (MD5) groups: 29, excess images: 29
+Exact-phash-match groups: 9495, excess images: 9507
+Near-duplicate pairs (phash distance 1-5, bucketed/approximate -- NOT an exhaustive pairwise scan, see script docstring): 1050
+
+Sample exact-MD5-duplicate groups (first 20):
+  ['roco:ROCO_001387', 'roco:ROCO_001388']
+  ['roco:ROCO_002737', 'roco:ROCO_002742']
+  ['roco:ROCO_004149', 'roco:ROCO_004150']
+  ['roco:ROCO_008103', 'roco:ROCO_008104']
+  ['roco:ROCO_011614', 'roco:ROCO_011616']
+  ['roco:ROCO_015382', 'roco:ROCO_015385']
+  ['roco:ROCO_015383', 'roco:ROCO_015386']
+  ['roco:ROCO_023408', 'roco:ROCO_023409']
+  ['roco:ROCO_026043', 'roco:ROCO_026044']
+  ['roco:ROCO_029848', 'roco:ROCO_029852']
+  ['roco:ROCO_035654', 'roco:ROCO_035655']
+  ['roco:ROCO_042307', 'roco:ROCO_042308']
+  ['roco:ROCO_042309', 'roco:ROCO_042310']
+  ['roco:ROCO_042311', 'roco:ROCO_042312']
+  ['roco:ROCO_042322', 'roco:ROCO_042325']
+  ['roco:ROCO_042323', 'roco:ROCO_042326']
+  ['roco:ROCO_042324', 'roco:ROCO_042327']
+  ['roco:ROCO_042328', 'roco:ROCO_042329']
+  ['roco:ROCO_044201', 'roco:ROCO_044202']
+  ['roco:ROCO_046179', 'roco:ROCO_046180']
+
+Sample near-duplicate pairs (first 50):
+  roco:ROCO_062389 <-> rocov2:ROCOV2_023416  (hamming=2)
+  roco:ROCO_061422 <-> rocov2:ROCOV2_023754  (hamming=2)
+  roco:ROCO_019959 <-> rocov2:ROCOV2_023850  (hamming=2)
+  roco:ROCO_021737 <-> rocov2:ROCOV2_019157  (hamming=2)
+  roco:ROCO_013079 <-> rocov2:ROCOV2_006927  (hamming=2)
+  roco:ROCO_036533 <-> roco:ROCO_061379  (hamming=4)
+  roco:ROCO_004120 <-> rocov2:ROCOV2_010766  (hamming=2)
+  roco:ROCO_039283 <-> rocov2:ROCOV2_021413  (hamming=2)
+  roco:ROCO_000083 <-> rocov2:ROCOV2_009380  (hamming=2)
+  roco:ROCO_019957 <-> rocov2:ROCOV2_008756  (hamming=2)
+  roco:ROCO_061917 <-> rocov2:ROCOV2_024615  (hamming=2)
+  roco:ROCO_030550 <-> rocov2:ROCOV2_011768  (hamming=2)
+  roco:ROCO_009927 <-> rocov2:ROCOV2_027800  (hamming=2)
+  roco:ROCO_002909 <-> rocov2:ROCOV2_011684  (hamming=4)
+  roco:ROCO_042695 <-> rocov2:ROCOV2_013782  (hamming=2)
+  roco:ROCO_038307 <-> rocov2:ROCOV2_025982  (hamming=2)
+  roco:ROCO_025309 <-> rocov2:ROCOV2_023462  (hamming=2)
+  roco:ROCO_009866 <-> rocov2:ROCOV2_020364  (hamming=2)
+  roco:ROCO_043348 <-> rocov2:ROCOV2_022299  (hamming=2)
+  roco:ROCO_030456 <-> roco:ROCO_030457  (hamming=2)
+  roco:ROCO_063343 <-> rocov2:ROCOV2_010364  (hamming=2)
+  roco:ROCO_055163 <-> rocov2:ROCOV2_026773  (hamming=2)
+  roco:ROCO_037767 <-> rocov2:ROCOV2_021052  (hamming=2)
+  roco:ROCO_000204 <-> roco:ROCO_000205  (hamming=4)
+  roco:ROCO_037603 <-> rocov2:ROCOV2_022931  (hamming=2)
+  roco:ROCO_028401 <-> rocov2:ROCOV2_011745  (hamming=2)
+  roco:ROCO_000886 <-> rocov2:ROCOV2_005972  (hamming=2)
+  roco:ROCO_009340 <-> rocov2:ROCOV2_024541  (hamming=2)
+  roco:ROCO_000245 <-> rocov2:ROCOV2_015185  (hamming=2)
+  roco:ROCO_000247 <-> rocov2:ROCOV2_023565  (hamming=2)
+  roco:ROCO_003891 <-> rocov2:ROCOV2_014879  (hamming=2)
+  roco:ROCO_023645 <-> roco:ROCO_023646  (hamming=2)
+  roco:ROCO_023645 <-> rocov2:ROCOV2_017184  (hamming=4)
+  roco:ROCO_023646 <-> rocov2:ROCOV2_017184  (hamming=2)
+  roco:ROCO_015007 <-> roco:ROCO_057918  (hamming=4)
+  roco:ROCO_037006 <-> rocov2:ROCOV2_022919  (hamming=2)
+  rocov2:ROCOV2_000483 <-> rocov2:ROCOV2_030467  (hamming=4)
+  roco:ROCO_003205 <-> rocov2:ROCOV2_003987  (hamming=2)
+  rocov2:ROCOV2_003369 <-> rocov2:ROCOV2_029803  (hamming=2)
+  roco:ROCO_055377 <-> rocov2:ROCOV2_017484  (hamming=2)
+  roco:ROCO_000295 <-> roco:ROCO_000297  (hamming=2)
+  roco:ROCO_025612 <-> roco:ROCO_047255  (hamming=4)
+  roco:ROCO_045204 <-> rocov2:ROCOV2_017465  (hamming=2)
+  roco:ROCO_000380 <-> rocov2:ROCOV2_004244  (hamming=2)
+  roco:ROCO_062930 <-> roco:ROCO_062931  (hamming=4)
+  roco:ROCO_062930 <-> rocov2:ROCOV2_004260  (hamming=2)
+  roco:ROCO_062930 <-> rocov2:ROCOV2_024812  (hamming=4)
+  roco:ROCO_062931 <-> rocov2:ROCOV2_004260  (hamming=2)
+  roco:ROCO_062931 <-> rocov2:ROCOV2_024812  (hamming=2)
+  rocov2:ROCOV2_004260 <-> rocov2:ROCOV2_024812  (hamming=4)

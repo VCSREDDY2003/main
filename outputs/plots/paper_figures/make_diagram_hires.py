@@ -1,0 +1,56 @@
+import graphviz
+
+g = graphviz.Digraph("IATGAM", format="png")
+g.attr(rankdir="TB", splines="ortho", nodesep="0.35", ranksep="0.45", bgcolor="white", dpi="300")
+g.attr("node", shape="box", style="rounded,filled", fontname="Helvetica", fontsize="11", margin="0.15,0.08")
+
+def box(name, label, color):
+    g.node(name, label, fillcolor=color, color="#555555")
+
+box("img", "Input image X\n(ROCO / ROCOv2)", "#eaf2fb")
+box("cap", "Input caption C", "#eaf2fb")
+box("cnn0", "CNN backbone\n(MultiDepthCNN)\nF_v0, feature map", "#d9ecf5")
+box("capenc", "Caption encoder\n(Transformer) -> H_c", "#d9ecf5")
+box("iat", "IAT module\nAttention-guided region\nperturbation -> X_aug, attn_map", "#fde9d7")
+box("cnn1", "CNN backbone (shared)\n-> F_v (final visual feature)", "#d9ecf5")
+box("fusion", "Multimodal fusion\n(F_v, H_c) -> F_fuse", "#eafaf1")
+box("gan", "Conditional GAN\n(X, y) -> x_fake -> G_feat", "#f8e3e3")
+box("lstm", "Temporal LSTM\n(T=1 for static images)\n-> h_T", "#eafaf1")
+box("state", "Multimodal state builder\n(F_fuse, G_feat, h_T) -> Z", "#eafaf1")
+box("lmm", "LMMDecoder", "#ece3f8")
+box("cls", "Classification head\n(5-class modality)", "#fff4cc")
+box("capdec", "Caption decoder", "#fff4cc")
+box("sumdec", "Summary decoder", "#fff4cc")
+
+g.edge("img", "cnn0")
+g.edge("cap", "capenc")
+g.edge("cnn0", "iat")
+g.edge("capenc", "iat", label="H_c (train-time only)")
+g.edge("iat", "cnn1", label="X_aug")
+g.edge("cnn1", "fusion")
+g.edge("capenc", "fusion")
+g.edge("img", "gan", label="(X, y)")
+g.edge("gan", "state", label="G_feat")
+g.edge("fusion", "lstm", label="F_fuse per step")
+g.edge("fusion", "state")
+g.edge("lstm", "state", label="h_T")
+g.edge("state", "lmm", label="Z")
+g.edge("lmm", "cls")
+g.edge("lmm", "capdec")
+g.edge("lmm", "sumdec")
+
+with g.subgraph(name="cluster_legend") as c:
+    c.attr(rank="sink", style="dashed", color="#888888", label="Legend", fontsize="10")
+    c.node("leg1", "Visual pathway", fillcolor="#d9ecf5", shape="box", style="rounded,filled")
+    c.node("leg2", "Augmentation (IAT)", fillcolor="#fde9d7", shape="box", style="rounded,filled")
+    c.node("leg3", "Generative (GAN)", fillcolor="#f8e3e3", shape="box", style="rounded,filled")
+    c.node("leg4", "Fusion / temporal / state", fillcolor="#eafaf1", shape="box", style="rounded,filled")
+    c.node("leg5", "Output heads", fillcolor="#fff4cc", shape="box", style="rounded,filled")
+    c.edge("leg1", "leg2", style="invis")
+    c.edge("leg2", "leg3", style="invis")
+    c.edge("leg3", "leg4", style="invis")
+    c.edge("leg4", "leg5", style="invis")
+
+out = "C:/Users/kalya/PD/IMAGECAPTION CODE/conference/proposed_model/new_IAT/outputs/plots/paper_figures/fig0_architecture"
+g.render(out, cleanup=True)
+print("diagram written")

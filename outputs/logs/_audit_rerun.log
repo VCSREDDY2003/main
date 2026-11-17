@@ -1,0 +1,22 @@
+Auditing 97333 images across ROCO + ROCOv2...
+  ...0/97333
+  ...10000/97333
+  ...20000/97333
+  ...30000/97333
+  ...40000/97333
+  ...50000/97333
+  ...60000/97333
+  ...70000/97333
+  ...80000/97333
+  ...90000/97333
+
+Missing/unreadable files: 0
+Exact-duplicate groups (identical file bytes): 29
+Exact-duplicate images (excess over 1 per group): 29
+Exact-phash-match groups (distance 0): 9495
+Exact-phash-match images (excess over 1 per group): 9507
+Checking near-duplicates (phash distance <= 5, bucketed) over 87826 unique hashes...
+Near-duplicate pairs found (bucketed, approximate): 1050
+
+Full report written to C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\duplicate_audit_report.txt
+Full machine-readable duplicate data written to C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\duplicate_audit_full.json

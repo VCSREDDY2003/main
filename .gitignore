@@ -1,0 +1,27 @@
+# Model checkpoints (large, excluded by explicit user instruction)
+outputs/model/
+outputs/model/**
+
+# Dataset symlink / data (excluded by explicit user instruction)
+datasets
+datasets/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Manuscript / paper files (never push the paper)
+*.docx
+*.pdf
+
+# Virtual environments / large caches
+.venv/
+venv/
+env/
+.cache/
+*.egg-info/
+
+# OS junk
+.DS_Store
+Thumbs.db

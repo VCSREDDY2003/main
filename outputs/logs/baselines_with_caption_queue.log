@@ -1,0 +1,400 @@
+=== TRAIN+EVAL (with caption head): resnet_small (combined) ===
+[resnet_small+caption] backbone_params: 2,229,429  total_params(+LMMDecoder): 15,697,473
+[resnet_small+caption] epoch 1/50  train_loss=12.2226 train_acc=0.7225  val_loss=13.9222 val_acc=0.2740
+[resnet_small+caption] epoch 2/50  train_loss=10.6291 train_acc=0.8254  val_loss=11.0922 val_acc=0.6796
+[resnet_small+caption] epoch 3/50  train_loss=10.0020 train_acc=0.8659  val_loss=10.5343 val_acc=0.7885
+[resnet_small+caption] epoch 4/50  train_loss=9.5768 train_acc=0.8891  val_loss=10.2176 val_acc=0.8517
+[resnet_small+caption] epoch 5/50  train_loss=9.2540 train_acc=0.9030  val_loss=10.1842 val_acc=0.8377
+[resnet_small+caption] epoch 6/50  train_loss=8.9813 train_acc=0.9148  val_loss=10.3509 val_acc=0.8039
+[resnet_small+caption] epoch 7/50  train_loss=8.7406 train_acc=0.9250  val_loss=9.9691 val_acc=0.9106
+[resnet_small+caption] epoch 8/50  train_loss=8.5234 train_acc=0.9325  val_loss=10.2692 val_acc=0.8402
+[resnet_small+caption] epoch 9/50  train_loss=8.3297 train_acc=0.9391  val_loss=10.1343 val_acc=0.8788
+[resnet_small+caption] epoch 10/50  train_loss=8.1480 train_acc=0.9452  val_loss=10.1044 val_acc=0.8936
+[resnet_small+caption] epoch 11/50  train_loss=7.9703 train_acc=0.9521  val_loss=10.1586 val_acc=0.8955
+[resnet_small+caption] epoch 12/50  train_loss=7.8071 train_acc=0.9588  val_loss=10.1257 val_acc=0.9196
+[resnet_small+caption] epoch 13/50  train_loss=7.6540 train_acc=0.9636  val_loss=10.4932 val_acc=0.7950
+[resnet_small+caption] epoch 14/50  train_loss=7.5001 train_acc=0.9719  val_loss=10.1363 val_acc=0.9349
+[resnet_small+caption] epoch 15/50  train_loss=7.3677 train_acc=0.9756  val_loss=10.3034 val_acc=0.9084
+[resnet_small+caption] epoch 16/50  train_loss=7.2338 train_acc=0.9810  val_loss=10.3548 val_acc=0.8972
+[resnet_small+caption] epoch 17/50  train_loss=7.1039 train_acc=0.9873  val_loss=10.2931 val_acc=0.9307
+[resnet_small+caption] epoch 18/50  train_loss=6.9739 train_acc=0.9904  val_loss=10.4446 val_acc=0.9204
+[resnet_small+caption] epoch 19/50  train_loss=6.8625 train_acc=0.9934  val_loss=10.7162 val_acc=0.8578
+[resnet_small+caption] epoch 20/50  train_loss=6.7506 train_acc=0.9954  val_loss=10.5365 val_acc=0.9159
+[resnet_small+caption] epoch 21/50  train_loss=6.6310 train_acc=0.9969  val_loss=10.5856 val_acc=0.9335
+[resnet_small+caption] epoch 22/50  train_loss=6.5227 train_acc=0.9982  val_loss=11.0806 val_acc=0.8615
+[resnet_small+caption] epoch 23/50  train_loss=6.4307 train_acc=0.9982  val_loss=10.7054 val_acc=0.9341
+[resnet_small+caption] epoch 24/50  train_loss=6.3106 train_acc=0.9987  val_loss=10.8115 val_acc=0.9115
+[resnet_small+caption] epoch 25/50  train_loss=6.2096 train_acc=0.9983  val_loss=10.7988 val_acc=0.9321
+[resnet_small+caption] epoch 26/50  train_loss=6.0979 train_acc=0.9994  val_loss=10.9168 val_acc=0.9302
+[resnet_small+caption] epoch 27/50  train_loss=6.0013 train_acc=0.9993  val_loss=11.0280 val_acc=0.9318
+[resnet_small+caption] epoch 28/50  train_loss=5.9137 train_acc=0.9991  val_loss=11.0327 val_acc=0.9307
+[resnet_small+caption] epoch 29/50  train_loss=5.8008 train_acc=0.9995  val_loss=11.0894 val_acc=0.9341
+[resnet_small+caption] epoch 30/50  train_loss=5.7017 train_acc=0.9998  val_loss=11.2080 val_acc=0.9299
+[resnet_small+caption] epoch 31/50  train_loss=5.6163 train_acc=0.9998  val_loss=11.3733 val_acc=0.9263
+[resnet_small+caption] epoch 32/50  train_loss=5.5233 train_acc=0.9996  val_loss=11.4793 val_acc=0.9078
+[resnet_small+caption] epoch 33/50  train_loss=5.4438 train_acc=0.9987  val_loss=11.4667 val_acc=0.9302
+[resnet_small+caption] epoch 34/50  train_loss=5.3439 train_acc=0.9996  val_loss=11.5371 val_acc=0.9316
+[resnet_small+caption] epoch 35/50  train_loss=5.2676 train_acc=0.9996  val_loss=11.5865 val_acc=0.9330
+[resnet_small+caption] epoch 36/50  train_loss=5.1791 train_acc=0.9997  val_loss=11.7087 val_acc=0.9274
+[resnet_small+caption] epoch 37/50  train_loss=5.1115 train_acc=0.9998  val_loss=11.7658 val_acc=0.9321
+[resnet_small+caption] epoch 38/50  train_loss=5.0337 train_acc=0.9999  val_loss=11.8897 val_acc=0.9243
+[resnet_small+caption] epoch 39/50  train_loss=4.9717 train_acc=0.9998  val_loss=12.0700 val_acc=0.9008
+[resnet_small+caption] epoch 40/50  train_loss=4.9103 train_acc=0.9997  val_loss=12.2748 val_acc=0.9028
+[resnet_small+caption] epoch 41/50  train_loss=4.8602 train_acc=0.9996  val_loss=12.0554 val_acc=0.9307
+[resnet_small+caption] epoch 42/50  train_loss=4.7780 train_acc=0.9999  val_loss=12.1444 val_acc=0.9358
+[resnet_small+caption] epoch 43/50  train_loss=4.7285 train_acc=0.9998  val_loss=12.1524 val_acc=0.9293
+[resnet_small+caption] epoch 44/50  train_loss=4.6721 train_acc=0.9998  val_loss=12.1968 val_acc=0.9313
+[resnet_small+caption] epoch 45/50  train_loss=4.6209 train_acc=0.9999  val_loss=12.3210 val_acc=0.9293
+[resnet_small+caption] epoch 46/50  train_loss=4.5681 train_acc=0.9999  val_loss=12.3920 val_acc=0.9352
+[resnet_small+caption] epoch 47/50  train_loss=4.5266 train_acc=0.9999  val_loss=12.4425 val_acc=0.9341
+[resnet_small+caption] epoch 48/50  train_loss=4.4748 train_acc=1.0000  val_loss=12.5045 val_acc=0.9215
+[resnet_small+caption] epoch 49/50  train_loss=4.4390 train_acc=0.9996  val_loss=12.5319 val_acc=0.9237
+[resnet_small+caption] epoch 50/50  train_loss=4.4010 train_acc=0.9999  val_loss=12.5730 val_acc=0.9251
+[resnet_small+caption] Best epoch: 42 (val_acc=0.9358) -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\model\baseline_resnet_small_withcap_combined_best.pt
+C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py:241: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt_path, map_location=device))
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 13241.27it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_metrics_baseline_resnet_small_withcap_combined.json
+=== TRAIN+EVAL (with caption head): efficientnet_small (combined) ===
+[efficientnet_small+caption] backbone_params: 2,360,149  total_params(+LMMDecoder): 18,302,433
+[efficientnet_small+caption] epoch 1/50  train_loss=12.0634 train_acc=0.7966  val_loss=10.9593 val_acc=0.8436
+[efficientnet_small+caption] epoch 2/50  train_loss=10.4781 train_acc=0.8725  val_loss=10.4414 val_acc=0.8464
+[efficientnet_small+caption] epoch 3/50  train_loss=9.8822 train_acc=0.8972  val_loss=10.2191 val_acc=0.8751
+[efficientnet_small+caption] epoch 4/50  train_loss=9.4761 train_acc=0.9135  val_loss=10.2145 val_acc=0.8506
+[efficientnet_small+caption] epoch 5/50  train_loss=9.1599 train_acc=0.9251  val_loss=10.0229 val_acc=0.8983
+[efficientnet_small+caption] epoch 6/50  train_loss=8.8821 train_acc=0.9355  val_loss=10.0057 val_acc=0.9112
+[efficientnet_small+caption] epoch 7/50  train_loss=8.6374 train_acc=0.9469  val_loss=10.0493 val_acc=0.8905
+[efficientnet_small+caption] epoch 8/50  train_loss=8.4110 train_acc=0.9573  val_loss=9.9996 val_acc=0.9117
+[efficientnet_small+caption] epoch 9/50  train_loss=8.2111 train_acc=0.9656  val_loss=10.1623 val_acc=0.8813
+[efficientnet_small+caption] epoch 10/50  train_loss=8.0162 train_acc=0.9747  val_loss=10.1087 val_acc=0.9050
+[efficientnet_small+caption] epoch 11/50  train_loss=7.8371 train_acc=0.9790  val_loss=10.2552 val_acc=0.8885
+[efficientnet_small+caption] epoch 12/50  train_loss=7.6903 train_acc=0.9807  val_loss=10.2615 val_acc=0.9042
+[efficientnet_small+caption] epoch 13/50  train_loss=7.5309 train_acc=0.9868  val_loss=10.2648 val_acc=0.9092
+[efficientnet_small+caption] epoch 14/50  train_loss=7.3620 train_acc=0.9934  val_loss=10.3229 val_acc=0.9106
+[efficientnet_small+caption] epoch 15/50  train_loss=7.2216 train_acc=0.9949  val_loss=10.4416 val_acc=0.9059
+[efficientnet_small+caption] epoch 16/50  train_loss=7.0938 train_acc=0.9951  val_loss=10.4526 val_acc=0.9073
+[efficientnet_small+caption] epoch 17/50  train_loss=6.9756 train_acc=0.9967  val_loss=10.5166 val_acc=0.9126
+[efficientnet_small+caption] epoch 18/50  train_loss=6.8608 train_acc=0.9959  val_loss=10.6588 val_acc=0.9039
+[efficientnet_small+caption] epoch 19/50  train_loss=6.7825 train_acc=0.9939  val_loss=10.8181 val_acc=0.8888
+[efficientnet_small+caption] epoch 20/50  train_loss=6.6612 train_acc=0.9959  val_loss=10.6892 val_acc=0.9184
+[efficientnet_small+caption] epoch 21/50  train_loss=6.5286 train_acc=0.9974  val_loss=10.8308 val_acc=0.9190
+[efficientnet_small+caption] epoch 22/50  train_loss=6.4199 train_acc=0.9984  val_loss=10.8959 val_acc=0.9087
+[efficientnet_small+caption] epoch 23/50  train_loss=6.3207 train_acc=0.9987  val_loss=10.9364 val_acc=0.9112
+[efficientnet_small+caption] epoch 24/50  train_loss=6.2294 train_acc=0.9981  val_loss=11.0737 val_acc=0.8994
+[efficientnet_small+caption] epoch 25/50  train_loss=6.1219 train_acc=0.9992  val_loss=11.1719 val_acc=0.9003
+[efficientnet_small+caption] epoch 26/50  train_loss=6.0629 train_acc=0.9983  val_loss=11.1994 val_acc=0.9115
+[efficientnet_small+caption] epoch 27/50  train_loss=5.9427 train_acc=0.9989  val_loss=11.1800 val_acc=0.9095
+[efficientnet_small+caption] epoch 28/50  train_loss=5.8630 train_acc=0.9993  val_loss=11.2891 val_acc=0.9128
+[efficientnet_small+caption] epoch 29/50  train_loss=5.7829 train_acc=0.9990  val_loss=11.3493 val_acc=0.9168
+[efficientnet_small+caption] epoch 30/50  train_loss=5.7062 train_acc=0.9989  val_loss=11.4733 val_acc=0.9081
+[efficientnet_small+caption] epoch 31/50  train_loss=5.6292 train_acc=0.9987  val_loss=11.4913 val_acc=0.9112
+[efficientnet_small+caption] epoch 32/50  train_loss=5.5563 train_acc=0.9984  val_loss=11.5988 val_acc=0.9050
+[efficientnet_small+caption] epoch 33/50  train_loss=5.4894 train_acc=0.9989  val_loss=11.6780 val_acc=0.9142
+[efficientnet_small+caption] epoch 34/50  train_loss=5.4081 train_acc=0.9991  val_loss=11.7433 val_acc=0.9095
+[efficientnet_small+caption] epoch 35/50  train_loss=5.3756 train_acc=0.9985  val_loss=11.8205 val_acc=0.9053
+[efficientnet_small+caption] epoch 36/50  train_loss=5.2771 train_acc=0.9993  val_loss=11.8106 val_acc=0.9106
+[efficientnet_small+caption] epoch 37/50  train_loss=5.2248 train_acc=0.9994  val_loss=11.8567 val_acc=0.9059
+[efficientnet_small+caption] epoch 38/50  train_loss=5.1620 train_acc=0.9993  val_loss=11.9706 val_acc=0.9204
+[efficientnet_small+caption] epoch 39/50  train_loss=5.1068 train_acc=0.9991  val_loss=11.9973 val_acc=0.9142
+[efficientnet_small+caption] epoch 40/50  train_loss=5.0526 train_acc=0.9993  val_loss=12.1360 val_acc=0.9159
+[efficientnet_small+caption] epoch 41/50  train_loss=4.9976 train_acc=0.9992  val_loss=12.1193 val_acc=0.9117
+[efficientnet_small+caption] epoch 42/50  train_loss=4.9560 train_acc=0.9992  val_loss=12.2770 val_acc=0.9075
+[efficientnet_small+caption] epoch 43/50  train_loss=4.9055 train_acc=0.9998  val_loss=12.2580 val_acc=0.9126
+[efficientnet_small+caption] epoch 44/50  train_loss=4.8601 train_acc=0.9990  val_loss=12.2975 val_acc=0.9092
+[efficientnet_small+caption] epoch 45/50  train_loss=4.8290 train_acc=0.9992  val_loss=12.4294 val_acc=0.9092
+[efficientnet_small+caption] epoch 46/50  train_loss=4.7737 train_acc=0.9992  val_loss=12.5261 val_acc=0.9098
+[efficientnet_small+caption] epoch 47/50  train_loss=4.7299 train_acc=0.9993  val_loss=12.4834 val_acc=0.9084
+[efficientnet_small+caption] epoch 48/50  train_loss=4.7249 train_acc=0.9989  val_loss=12.5261 val_acc=0.9067
+[efficientnet_small+caption] epoch 49/50  train_loss=4.6581 train_acc=0.9996  val_loss=12.5888 val_acc=0.9156
+[efficientnet_small+caption] epoch 50/50  train_loss=4.6231 train_acc=0.9992  val_loss=12.5890 val_acc=0.9140
+[efficientnet_small+caption] Best epoch: 38 (val_acc=0.9204) -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\model\baseline_efficientnet_small_withcap_combined_best.pt
+C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py:241: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt_path, map_location=device))
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 3115.06it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_metrics_baseline_efficientnet_small_withcap_combined.json
+=== TRAIN+EVAL (with caption head): mobilenet_style (combined) ===
+[mobilenet_style+caption] backbone_params: 2,112,053  total_params(+LMMDecoder): 35,374,017
+[mobilenet_style+caption] epoch 1/50  train_loss=12.1148 train_acc=0.7815  val_loss=10.9635 val_acc=0.8430
+[mobilenet_style+caption] epoch 2/50  train_loss=10.5104 train_acc=0.8712  val_loss=10.4368 val_acc=0.8777
+[mobilenet_style+caption] epoch 3/50  train_loss=9.8907 train_acc=0.9023  val_loss=10.3207 val_acc=0.8458
+[mobilenet_style+caption] epoch 4/50  train_loss=9.4555 train_acc=0.9265  val_loss=10.1416 val_acc=0.8849
+[mobilenet_style+caption] epoch 5/50  train_loss=9.1006 train_acc=0.9497  val_loss=10.1212 val_acc=0.8799
+[mobilenet_style+caption] epoch 6/50  train_loss=8.8263 train_acc=0.9630  val_loss=10.1412 val_acc=0.8863
+[mobilenet_style+caption] epoch 7/50  train_loss=8.5631 train_acc=0.9807  val_loss=10.1468 val_acc=0.8939
+[mobilenet_style+caption] epoch 8/50  train_loss=8.3441 train_acc=0.9877  val_loss=10.1434 val_acc=0.8944
+[mobilenet_style+caption] epoch 9/50  train_loss=8.1591 train_acc=0.9897  val_loss=10.3093 val_acc=0.8696
+[mobilenet_style+caption] epoch 10/50  train_loss=8.0455 train_acc=0.9807  val_loss=10.2920 val_acc=0.8891
+[mobilenet_style+caption] epoch 11/50  train_loss=7.8427 train_acc=0.9901  val_loss=10.2880 val_acc=0.8983
+[mobilenet_style+caption] epoch 12/50  train_loss=7.6762 train_acc=0.9948  val_loss=10.4429 val_acc=0.8791
+[mobilenet_style+caption] epoch 13/50  train_loss=7.4898 train_acc=0.9982  val_loss=10.4176 val_acc=0.8958
+[mobilenet_style+caption] epoch 14/50  train_loss=7.3414 train_acc=0.9968  val_loss=10.5087 val_acc=0.8902
+[mobilenet_style+caption] epoch 15/50  train_loss=7.2257 train_acc=0.9949  val_loss=10.5491 val_acc=0.8911
+[mobilenet_style+caption] epoch 16/50  train_loss=7.0528 train_acc=0.9971  val_loss=10.5870 val_acc=0.8975
+[mobilenet_style+caption] epoch 17/50  train_loss=6.8981 train_acc=0.9978  val_loss=10.6759 val_acc=0.8953
+[mobilenet_style+caption] epoch 18/50  train_loss=6.7784 train_acc=0.9967  val_loss=10.7489 val_acc=0.9006
+[mobilenet_style+caption] epoch 19/50  train_loss=6.6160 train_acc=0.9979  val_loss=10.8103 val_acc=0.8975
+[mobilenet_style+caption] epoch 20/50  train_loss=6.5070 train_acc=0.9969  val_loss=10.8958 val_acc=0.8986
+[mobilenet_style+caption] epoch 21/50  train_loss=6.3329 train_acc=0.9986  val_loss=10.9735 val_acc=0.8980
+[mobilenet_style+caption] epoch 22/50  train_loss=6.1950 train_acc=0.9990  val_loss=10.9988 val_acc=0.8966
+[mobilenet_style+caption] epoch 23/50  train_loss=6.0792 train_acc=0.9991  val_loss=11.1851 val_acc=0.8933
+[mobilenet_style+caption] epoch 24/50  train_loss=5.9481 train_acc=0.9987  val_loss=11.2506 val_acc=0.8961
+[mobilenet_style+caption] epoch 25/50  train_loss=5.8252 train_acc=0.9988  val_loss=11.3268 val_acc=0.8950
+[mobilenet_style+caption] epoch 26/50  train_loss=5.7265 train_acc=0.9990  val_loss=11.3909 val_acc=0.8992
+[mobilenet_style+caption] epoch 27/50  train_loss=5.6117 train_acc=0.9995  val_loss=11.4888 val_acc=0.8880
+[mobilenet_style+caption] epoch 28/50  train_loss=5.5196 train_acc=0.9993  val_loss=11.5293 val_acc=0.8983
+[mobilenet_style+caption] epoch 29/50  train_loss=5.4106 train_acc=0.9993  val_loss=11.7318 val_acc=0.8863
+[mobilenet_style+caption] epoch 30/50  train_loss=5.3191 train_acc=0.9995  val_loss=11.7063 val_acc=0.8975
+[mobilenet_style+caption] epoch 31/50  train_loss=5.2362 train_acc=0.9992  val_loss=11.7895 val_acc=0.8927
+[mobilenet_style+caption] epoch 32/50  train_loss=5.1656 train_acc=0.9991  val_loss=11.8549 val_acc=0.8978
+[mobilenet_style+caption] epoch 33/50  train_loss=5.0803 train_acc=0.9993  val_loss=11.8595 val_acc=0.8897
+[mobilenet_style+caption] epoch 34/50  train_loss=5.0132 train_acc=0.9994  val_loss=11.9355 val_acc=0.8950
+[mobilenet_style+caption] epoch 35/50  train_loss=4.9328 train_acc=0.9993  val_loss=11.9934 val_acc=0.8947
+[mobilenet_style+caption] epoch 36/50  train_loss=4.8750 train_acc=0.9998  val_loss=12.1434 val_acc=0.8919
+[mobilenet_style+caption] epoch 37/50  train_loss=4.8144 train_acc=0.9997  val_loss=12.1907 val_acc=0.8908
+[mobilenet_style+caption] epoch 38/50  train_loss=4.7742 train_acc=0.9987  val_loss=12.2269 val_acc=0.8980
+[mobilenet_style+caption] epoch 39/50  train_loss=4.6930 train_acc=0.9999  val_loss=12.3085 val_acc=0.8955
+[mobilenet_style+caption] epoch 40/50  train_loss=4.6579 train_acc=0.9990  val_loss=12.3445 val_acc=0.8992
+[mobilenet_style+caption] epoch 41/50  train_loss=4.6071 train_acc=0.9993  val_loss=12.4319 val_acc=0.8950
+[mobilenet_style+caption] epoch 42/50  train_loss=4.5653 train_acc=0.9995  val_loss=12.4643 val_acc=0.8908
+[mobilenet_style+caption] epoch 43/50  train_loss=4.5025 train_acc=0.9998  val_loss=12.4471 val_acc=0.8936
+[mobilenet_style+caption] epoch 44/50  train_loss=4.4741 train_acc=0.9996  val_loss=12.5266 val_acc=0.8955
+[mobilenet_style+caption] epoch 45/50  train_loss=4.4297 train_acc=0.9999  val_loss=12.5651 val_acc=0.8992
+[mobilenet_style+caption] epoch 46/50  train_loss=4.3912 train_acc=0.9998  val_loss=12.6237 val_acc=0.8950
+[mobilenet_style+caption] epoch 47/50  train_loss=4.3538 train_acc=0.9995  val_loss=12.5891 val_acc=0.8961
+[mobilenet_style+caption] epoch 48/50  train_loss=4.3310 train_acc=0.9996  val_loss=12.6376 val_acc=0.8961
+[mobilenet_style+caption] epoch 49/50  train_loss=4.2964 train_acc=0.9997  val_loss=12.6459 val_acc=0.8980
+[mobilenet_style+caption] epoch 50/50  train_loss=4.2659 train_acc=0.9990  val_loss=12.6933 val_acc=0.8941
+[mobilenet_style+caption] Best epoch: 18 (val_acc=0.9006) -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\model\baseline_mobilenet_style_withcap_combined_best.pt
+C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py:241: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt_path, map_location=device))
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 3649.19it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_metrics_baseline_mobilenet_style_withcap_combined.json
+=== TRAIN+EVAL (with caption head): shufflenet_style (combined) ===
+[shufflenet_style+caption] backbone_params: 2,270,525  total_params(+LMMDecoder): 31,821,129
+[shufflenet_style+caption] epoch 1/50  train_loss=12.1671 train_acc=0.7547  val_loss=11.0334 val_acc=0.8196
+[shufflenet_style+caption] epoch 2/50  train_loss=10.5790 train_acc=0.8476  val_loss=10.5789 val_acc=0.8274
+[shufflenet_style+caption] epoch 3/50  train_loss=9.9493 train_acc=0.8853  val_loss=10.2545 val_acc=0.8679
+[shufflenet_style+caption] epoch 4/50  train_loss=9.5159 train_acc=0.9094  val_loss=10.3115 val_acc=0.8349
+[shufflenet_style+caption] epoch 5/50  train_loss=9.1695 train_acc=0.9276  val_loss=10.1991 val_acc=0.8626
+[shufflenet_style+caption] epoch 6/50  train_loss=8.8717 train_acc=0.9458  val_loss=10.5113 val_acc=0.7939
+[shufflenet_style+caption] epoch 7/50  train_loss=8.6145 train_acc=0.9578  val_loss=10.1430 val_acc=0.8802
+[shufflenet_style+caption] epoch 8/50  train_loss=8.3460 train_acc=0.9770  val_loss=10.2963 val_acc=0.8620
+[shufflenet_style+caption] epoch 9/50  train_loss=8.1353 train_acc=0.9822  val_loss=10.3419 val_acc=0.8564
+[shufflenet_style+caption] epoch 10/50  train_loss=7.9607 train_acc=0.9812  val_loss=10.3277 val_acc=0.8771
+[shufflenet_style+caption] epoch 11/50  train_loss=7.7668 train_acc=0.9870  val_loss=10.3133 val_acc=0.8950
+[shufflenet_style+caption] epoch 12/50  train_loss=7.5365 train_acc=0.9961  val_loss=10.4238 val_acc=0.8897
+[shufflenet_style+caption] epoch 13/50  train_loss=7.3466 train_acc=0.9981  val_loss=10.4338 val_acc=0.8969
+[shufflenet_style+caption] epoch 14/50  train_loss=7.1713 train_acc=0.9984  val_loss=10.5884 val_acc=0.8709
+[shufflenet_style+caption] epoch 15/50  train_loss=7.0369 train_acc=0.9954  val_loss=10.6568 val_acc=0.8911
+[shufflenet_style+caption] epoch 16/50  train_loss=6.8667 train_acc=0.9956  val_loss=10.7653 val_acc=0.8860
+[shufflenet_style+caption] epoch 17/50  train_loss=6.7452 train_acc=0.9950  val_loss=10.9720 val_acc=0.8799
+[shufflenet_style+caption] epoch 18/50  train_loss=6.5735 train_acc=0.9963  val_loss=10.8423 val_acc=0.8922
+[shufflenet_style+caption] epoch 19/50  train_loss=6.3968 train_acc=0.9990  val_loss=10.9952 val_acc=0.8966
+[shufflenet_style+caption] epoch 20/50  train_loss=6.2608 train_acc=0.9995  val_loss=11.1251 val_acc=0.8961
+[shufflenet_style+caption] epoch 21/50  train_loss=6.1431 train_acc=0.9991  val_loss=11.2030 val_acc=0.8916
+[shufflenet_style+caption] epoch 22/50  train_loss=6.0142 train_acc=0.9991  val_loss=11.2257 val_acc=0.8913
+[shufflenet_style+caption] epoch 23/50  train_loss=5.8947 train_acc=0.9990  val_loss=11.3965 val_acc=0.8955
+[shufflenet_style+caption] epoch 24/50  train_loss=5.7808 train_acc=0.9992  val_loss=11.4306 val_acc=0.8863
+[shufflenet_style+caption] epoch 25/50  train_loss=5.6798 train_acc=0.9994  val_loss=11.4780 val_acc=0.8838
+[shufflenet_style+caption] epoch 26/50  train_loss=5.5868 train_acc=0.9989  val_loss=11.6385 val_acc=0.8885
+[shufflenet_style+caption] epoch 27/50  train_loss=5.4852 train_acc=0.9995  val_loss=11.6882 val_acc=0.8925
+[shufflenet_style+caption] epoch 28/50  train_loss=5.3904 train_acc=0.9996  val_loss=11.7587 val_acc=0.8916
+[shufflenet_style+caption] epoch 29/50  train_loss=5.3125 train_acc=0.9995  val_loss=11.8647 val_acc=0.8939
+[shufflenet_style+caption] epoch 30/50  train_loss=5.2585 train_acc=0.9993  val_loss=11.9510 val_acc=0.8933
+[shufflenet_style+caption] epoch 31/50  train_loss=5.1624 train_acc=0.9995  val_loss=11.9877 val_acc=0.8905
+[shufflenet_style+caption] epoch 32/50  train_loss=5.0881 train_acc=0.9995  val_loss=12.1486 val_acc=0.8964
+[shufflenet_style+caption] epoch 33/50  train_loss=5.0221 train_acc=0.9996  val_loss=12.2578 val_acc=0.8849
+[shufflenet_style+caption] epoch 34/50  train_loss=4.9622 train_acc=0.9997  val_loss=12.2020 val_acc=0.8883
+[shufflenet_style+caption] epoch 35/50  train_loss=4.9053 train_acc=0.9997  val_loss=12.2555 val_acc=0.8911
+[shufflenet_style+caption] epoch 36/50  train_loss=4.8492 train_acc=0.9995  val_loss=12.3136 val_acc=0.8944
+[shufflenet_style+caption] epoch 37/50  train_loss=4.8028 train_acc=0.9992  val_loss=12.4018 val_acc=0.8885
+[shufflenet_style+caption] epoch 38/50  train_loss=4.7671 train_acc=0.9993  val_loss=12.4442 val_acc=0.8880
+[shufflenet_style+caption] epoch 39/50  train_loss=4.7122 train_acc=0.9998  val_loss=12.5171 val_acc=0.8955
+[shufflenet_style+caption] epoch 40/50  train_loss=4.6577 train_acc=0.9998  val_loss=12.5573 val_acc=0.8953
+[shufflenet_style+caption] epoch 41/50  train_loss=4.6128 train_acc=0.9995  val_loss=12.6701 val_acc=0.8785
+[shufflenet_style+caption] epoch 42/50  train_loss=4.5823 train_acc=0.9996  val_loss=12.6657 val_acc=0.8832
+[shufflenet_style+caption] epoch 43/50  train_loss=4.5452 train_acc=0.9993  val_loss=12.6764 val_acc=0.8894
+[shufflenet_style+caption] epoch 44/50  train_loss=4.5204 train_acc=0.9993  val_loss=12.7834 val_acc=0.8899
+[shufflenet_style+caption] epoch 45/50  train_loss=4.4763 train_acc=0.9999  val_loss=12.7143 val_acc=0.8849
+[shufflenet_style+caption] epoch 46/50  train_loss=4.4549 train_acc=0.9998  val_loss=12.7924 val_acc=0.8891
+[shufflenet_style+caption] epoch 47/50  train_loss=4.4178 train_acc=0.9998  val_loss=12.9135 val_acc=0.8916
+[shufflenet_style+caption] epoch 48/50  train_loss=4.3834 train_acc=0.9998  val_loss=12.8527 val_acc=0.8925
+[shufflenet_style+caption] epoch 49/50  train_loss=4.3526 train_acc=0.9995  val_loss=12.9609 val_acc=0.8936
+[shufflenet_style+caption] epoch 50/50  train_loss=4.3605 train_acc=0.9975  val_loss=12.9262 val_acc=0.8874
+[shufflenet_style+caption] Best epoch: 13 (val_acc=0.8969) -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\model\baseline_shufflenet_style_withcap_combined_best.pt
+C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py:241: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt_path, map_location=device))
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 2769.96it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_metrics_baseline_shufflenet_style_withcap_combined.json
+=== TRAIN+EVAL (with caption head): squeezenet_style (combined) ===
+[squeezenet_style+caption] backbone_params: 2,693,573  total_params(+LMMDecoder): 29,769,937
+[squeezenet_style+caption] epoch 1/50  train_loss=12.7911 train_acc=0.4367  val_loss=11.4496 val_acc=0.6430
+[squeezenet_style+caption] epoch 2/50  train_loss=10.9656 train_acc=0.7102  val_loss=10.8518 val_acc=0.7413
+[squeezenet_style+caption] epoch 3/50  train_loss=10.2589 train_acc=0.7960  val_loss=10.5276 val_acc=0.7835
+[squeezenet_style+caption] epoch 4/50  train_loss=9.8093 train_acc=0.8260  val_loss=10.3021 val_acc=0.8330
+[squeezenet_style+caption] epoch 5/50  train_loss=9.4577 train_acc=0.8536  val_loss=10.2242 val_acc=0.8399
+[squeezenet_style+caption] epoch 6/50  train_loss=9.1607 train_acc=0.8721  val_loss=10.1979 val_acc=0.8458
+[squeezenet_style+caption] epoch 7/50  train_loss=8.8899 train_acc=0.8838  val_loss=10.1277 val_acc=0.8729
+[squeezenet_style+caption] epoch 8/50  train_loss=8.6320 train_acc=0.8990  val_loss=10.1609 val_acc=0.8824
+[squeezenet_style+caption] epoch 9/50  train_loss=8.3908 train_acc=0.9053  val_loss=10.1722 val_acc=0.8763
+[squeezenet_style+caption] epoch 10/50  train_loss=8.1653 train_acc=0.9129  val_loss=10.1960 val_acc=0.8874
+[squeezenet_style+caption] epoch 11/50  train_loss=7.9469 train_acc=0.9262  val_loss=10.2385 val_acc=0.8899
+[squeezenet_style+caption] epoch 12/50  train_loss=7.7453 train_acc=0.9324  val_loss=10.2973 val_acc=0.8966
+[squeezenet_style+caption] epoch 13/50  train_loss=7.5638 train_acc=0.9369  val_loss=10.3741 val_acc=0.8802
+[squeezenet_style+caption] epoch 14/50  train_loss=7.3991 train_acc=0.9426  val_loss=10.4734 val_acc=0.8936
+[squeezenet_style+caption] epoch 15/50  train_loss=7.2200 train_acc=0.9493  val_loss=10.5188 val_acc=0.9014
+[squeezenet_style+caption] epoch 16/50  train_loss=7.0714 train_acc=0.9564  val_loss=10.6685 val_acc=0.8958
+[squeezenet_style+caption] epoch 17/50  train_loss=6.9242 train_acc=0.9615  val_loss=10.6318 val_acc=0.9014
+[squeezenet_style+caption] epoch 18/50  train_loss=6.7833 train_acc=0.9661  val_loss=10.7851 val_acc=0.8980
+[squeezenet_style+caption] epoch 19/50  train_loss=6.6483 train_acc=0.9715  val_loss=10.7811 val_acc=0.9036
+[squeezenet_style+caption] epoch 20/50  train_loss=6.5225 train_acc=0.9746  val_loss=10.8613 val_acc=0.8978
+[squeezenet_style+caption] epoch 21/50  train_loss=6.4148 train_acc=0.9789  val_loss=10.9145 val_acc=0.9059
+[squeezenet_style+caption] epoch 22/50  train_loss=6.3004 train_acc=0.9823  val_loss=11.0754 val_acc=0.8964
+[squeezenet_style+caption] epoch 23/50  train_loss=6.2051 train_acc=0.9840  val_loss=11.0966 val_acc=0.8983
+[squeezenet_style+caption] epoch 24/50  train_loss=6.1056 train_acc=0.9868  val_loss=11.2506 val_acc=0.9061
+[squeezenet_style+caption] epoch 25/50  train_loss=6.0069 train_acc=0.9886  val_loss=11.2388 val_acc=0.9011
+[squeezenet_style+caption] epoch 26/50  train_loss=5.9278 train_acc=0.9892  val_loss=11.3487 val_acc=0.9028
+[squeezenet_style+caption] epoch 27/50  train_loss=5.8551 train_acc=0.9911  val_loss=11.3462 val_acc=0.9084
+[squeezenet_style+caption] epoch 28/50  train_loss=5.7705 train_acc=0.9923  val_loss=11.4211 val_acc=0.9081
+[squeezenet_style+caption] epoch 29/50  train_loss=5.6967 train_acc=0.9937  val_loss=11.5727 val_acc=0.9056
+[squeezenet_style+caption] epoch 30/50  train_loss=5.6286 train_acc=0.9935  val_loss=11.5629 val_acc=0.9064
+[squeezenet_style+caption] epoch 31/50  train_loss=5.5631 train_acc=0.9947  val_loss=11.7096 val_acc=0.8983
+[squeezenet_style+caption] epoch 32/50  train_loss=5.5068 train_acc=0.9953  val_loss=11.7099 val_acc=0.9101
+[squeezenet_style+caption] epoch 33/50  train_loss=5.4430 train_acc=0.9959  val_loss=11.8589 val_acc=0.9047
+[squeezenet_style+caption] epoch 34/50  train_loss=5.3752 train_acc=0.9966  val_loss=11.9173 val_acc=0.9056
+[squeezenet_style+caption] epoch 35/50  train_loss=5.3273 train_acc=0.9969  val_loss=11.9880 val_acc=0.9031
+[squeezenet_style+caption] epoch 36/50  train_loss=5.2855 train_acc=0.9968  val_loss=12.0522 val_acc=0.9070
+[squeezenet_style+caption] epoch 37/50  train_loss=5.2364 train_acc=0.9974  val_loss=12.0733 val_acc=0.9059
+[squeezenet_style+caption] epoch 38/50  train_loss=5.1815 train_acc=0.9975  val_loss=12.1536 val_acc=0.9047
+[squeezenet_style+caption] epoch 39/50  train_loss=5.1422 train_acc=0.9979  val_loss=12.2486 val_acc=0.9073
+[squeezenet_style+caption] epoch 40/50  train_loss=5.0928 train_acc=0.9980  val_loss=12.2719 val_acc=0.9042
+[squeezenet_style+caption] epoch 41/50  train_loss=5.0638 train_acc=0.9982  val_loss=12.2622 val_acc=0.9034
+[squeezenet_style+caption] epoch 42/50  train_loss=5.0242 train_acc=0.9984  val_loss=12.3956 val_acc=0.9056
+[squeezenet_style+caption] epoch 43/50  train_loss=4.9731 train_acc=0.9985  val_loss=12.4741 val_acc=0.9045
+[squeezenet_style+caption] epoch 44/50  train_loss=4.9394 train_acc=0.9989  val_loss=12.4682 val_acc=0.9059
+[squeezenet_style+caption] epoch 45/50  train_loss=4.9010 train_acc=0.9990  val_loss=12.4857 val_acc=0.9087
+[squeezenet_style+caption] epoch 46/50  train_loss=4.8664 train_acc=0.9990  val_loss=12.6159 val_acc=0.9061
+[squeezenet_style+caption] epoch 47/50  train_loss=4.8456 train_acc=0.9989  val_loss=12.6749 val_acc=0.9056
+[squeezenet_style+caption] epoch 48/50  train_loss=4.8006 train_acc=0.9989  val_loss=12.6277 val_acc=0.9053
+[squeezenet_style+caption] epoch 49/50  train_loss=4.7742 train_acc=0.9993  val_loss=12.7189 val_acc=0.9059
+[squeezenet_style+caption] epoch 50/50  train_loss=4.7573 train_acc=0.9992  val_loss=12.8037 val_acc=0.9053
+[squeezenet_style+caption] Best epoch: 32 (val_acc=0.9101) -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\model\baseline_squeezenet_style_withcap_combined_best.pt
+C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py:241: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt_path, map_location=device))
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 5089.25it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_metrics_baseline_squeezenet_style_withcap_combined.json
+=== TRAIN+EVAL (with caption head): densenet_style (combined) ===
+[densenet_style+caption] backbone_params: 2,258,009  total_params(+LMMDecoder): 19,514,733
+Traceback (most recent call last):
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py", line 256, in <module>
+    main()
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py", line 231, in main
+    train_loss, train_acc = run_train_epoch(model, train_loader, device, optimizer)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py", line 111, in run_train_epoch
+    class_logits, lmm_out = model(images, cap_in, sum_in)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py", line 82, in forward
+    lmm_out = self.lmm(z, caption_input, summary_input, feat_map)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\models\lmm\lmm.py", line 320, in forward
+    summary_logits, summary_attn = self.summary_decoder(h0, summary_input, feat_flat, saliency_bias=saliency_bias)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\models\lmm\lmm.py", line 144, in forward
+    logits, hidden, attn = self._step(x[:, t, :], hidden, feat_map, saliency_bias=saliency_bias)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\models\lmm\lmm.py", line 115, in _step
+    context, attn = self.attn(hidden, feat_map, saliency_bias=saliency_bias)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\models\lmm\lmm.py", line 86, in forward
+    scores = self.energy(torch.tanh(q + k)).squeeze(-1)   # (B, h, N)
+                         ^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

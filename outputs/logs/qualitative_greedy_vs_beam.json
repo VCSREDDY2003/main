@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ROCO_063520",
+    "reference": "postoperative magnetic resonance imaging mri post gadolinium postoperative mri demonstrating extent of resection and operative changes",
+    "greedy_caption": "magnetic resonance imaging of the brain showing the right temporal lobe of the left temporal lobe",
+    "beam_caption": "magnetic resonance imaging of the brain of the brain of the brain"
+  },
+  {
+    "id": "ROCO_020577",
+    "reference": "sagittal mri demonstrating the extent of the soft tissue injury not apparent of the ct narrowed canal anterior and posterior ligamentous disruption small epidural hematoma and prevertebral edema",
+    "greedy_caption": "mri of the right hip showing a large mass in the left mandibular sinus",
+    "beam_caption": "sagittal radiograph of the right eye shows a well defined lesion in the left maxillary sinus"
+  },
+  {
+    "id": "ROCO_019230",
+    "reference": "axial cect of the abdomen in a 25 year old man with <unk> there is a large heterogeneous mixed solid and cystic mass in the left upper quadrant white arrowheads",
+    "greedy_caption": "ct scan of the abdomen shows a large mass in the right kidney with a large mass with a large mass",
+    "beam_caption": "ct scan of the abdomen shows a large retroperitoneal mass in the right kidney with a large mass"
+  },
+  {
+    "id": "ROCO_038013",
+    "reference": "ct showing left <unk> with extensive involvement of the diaphragm including <unk> crus and <unk> long arrows there is abutment and displacement of the descending thoracic aorta arrow heads and",
+    "greedy_caption": "ct scan showing a large mass in the right kidney",
+    "beam_caption": "ct scan showing the presence of the right kidney"
+  },
+  {
+    "id": "ROCO_021152",
+    "reference": "sonographic image shows the transverse section of an acutely inflamed appendix with an 11 mm outer diameter note the surrounding hyperechoic inflamed fatty tissue",
+    "greedy_caption": "a four chamber view of the right parasternal long axis view of the right ventricle with a large mass in the left ventricle with a large left ventricular outflow tract",
+    "beam_caption": "a four chamber view of the right parasternal long axis view of the right ventricle shows a large mass in the left atrium and left ventricle"
+  }
+]

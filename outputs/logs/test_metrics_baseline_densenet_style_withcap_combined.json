@@ -1,0 +1,96 @@
+{
+  "classification": {
+    "5class": {
+      "accuracy": 0.9251814628699051,
+      "precision": 0.9262527414556231,
+      "recall": 0.924746039472171,
+      "f1": 0.9246579688715559,
+      "precision_per_class": [
+        0.904862579281184,
+        0.9305210918114144,
+        0.8911205073995772,
+        0.9785067873303167,
+        0.0
+      ],
+      "recall_per_class": [
+        0.9585666293393057,
+        0.8542141230068337,
+        0.9408482142857143,
+        0.9453551912568307,
+        0.0
+      ],
+      "f1_per_class": [
+        0.9309407286568787,
+        0.8907363420427553,
+        0.9153094462540716,
+        0.9616453585325181,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          856,
+          17,
+          18,
+          2,
+          0
+        ],
+        [
+          50,
+          750,
+          67,
+          11,
+          0
+        ],
+        [
+          21,
+          26,
+          843,
+          6,
+          0
+        ],
+        [
+          19,
+          13,
+          18,
+          865,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.924746039472171
+    }
+  },
+  "captioning": {
+    "caption": {
+      "bleu1": 0.19677525459135375,
+      "bleu4": 0.08815887351006209,
+      "meteor": 0.1730111886920548,
+      "rouge_1": 0.21292748094598418,
+      "rouge_l": 0.1889405035003182,
+      "cider_d": 0.23705047525381304,
+      "spice": 0.08607459473958806,
+      "bert_score_f1": 0.734360149662742
+    },
+    "summary": {
+      "bleu1": 0.19599726927539896,
+      "bleu4": 0.08731613966493004,
+      "meteor": 0.17212513097680168,
+      "rouge_1": 0.21025949444466716,
+      "rouge_l": 0.18609307121183716,
+      "cider_d": 0.23280045746582514,
+      "spice": 0.08310773863677792
+    }
+  },
+  "n_backbone_params": 2258009,
+  "n_total_params_with_caption_head": 19515765,
+  "best_epoch": 6,
+  "best_val_loss": 9.7409577140595,
+  "arch": "densenet_style",
+  "note": "backbone frozen (loaded from classification-only checkpoint); only a fresh BatchNorm2d + LMMDecoder trained on captioning loss, to avoid the loss-explosion bug when densenet's unnormalized forward_features() output was fed into LMMDecoder's spatial cross-attention under full joint backprop."
+}

@@ -1,0 +1,200 @@
+C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\modules\transformer.py:502: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\NestedTensorImpl.cpp:180.)
+  output = torch._nested_tensor_from_mask(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 2669.69it/s]
+[1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Wrote full results metrics -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_metrics.json
+{
+  "classification": {
+    "binary": {
+      "accuracy": 0.6575126694973291,
+      "precision": 0.6002773474425513,
+      "recall": 0.6057914293080319,
+      "f1": 0.6022926758119536,
+      "precision_per_class": [
+        0.7677623519804002,
+        0.4327923429047025
+      ],
+      "recall_per_class": [
+        0.7339709183175563,
+        0.47761194029850745
+      ],
+      "f1_per_class": [
+        0.7504864541236342,
+        0.4540988975002729
+      ],
+      "confusion_matrix": [
+        [
+          7521,
+          2726
+        ],
+        [
+          2275,
+          2080
+        ]
+      ],
+      "balanced_accuracy": 0.6057914293080319,
+      "auroc_macro_ovr": 0.6439731849494299
+    },
+    "3class": {
+      "accuracy": 0.6836734693877551,
+      "precision": 0.6152031309293967,
+      "recall": 0.6503385242926362,
+      "f1": 0.5765029429632597,
+      "precision_per_class": [
+        0.6378117795011528,
+        0.7272322422623024,
+        0.48056537102473496
+      ],
+      "recall_per_class": [
+        0.9121702637889688,
+        0.9451598900303864,
+        0.09368541905855339
+      ],
+      "f1_per_class": [
+        0.7507092635993586,
+        0.8219971056439942,
+        0.15680245964642583
+      ],
+      "confusion_matrix": [
+        [
+          3043,
+          88,
+          205
+        ],
+        [
+          143,
+          6532,
+          236
+        ],
+        [
+          1585,
+          2362,
+          408
+        ]
+      ],
+      "balanced_accuracy": 0.6503385242926362,
+      "auroc_macro_ovr": 0.8102114170910403
+    },
+    "5class": {
+      "accuracy": 0.661210793042049,
+      "precision": 0.6219736443553358,
+      "recall": 0.7473934146422193,
+      "f1": 0.6351260189987852,
+      "precision_per_class": [
+        0.6367825722664432,
+        0.7472413075161357,
+        0.6839130434782609,
+        0.546812749003984,
+        0.49511854951185497
+      ],
+      "recall_per_class": [
+        0.9112709832134293,
+        0.8954590818363274,
+        0.9029850746268657,
+        0.9457364341085271,
+        0.08151549942594719
+      ],
+      "f1_per_class": [
+        0.749691738594328,
+        0.8146634888207922,
+        0.7783275606135577,
+        0.6929630798359104,
+        0.13998422712933753
+      ],
+      "confusion_matrix": [
+        [
+          3040,
+          45,
+          40,
+          20,
+          191
+        ],
+        [
+          112,
+          3589,
+          147,
+          71,
+          89
+        ],
+        [
+          16,
+          91,
+          1573,
+          10,
+          52
+        ],
+        [
+          12,
+          7,
+          14,
+          1098,
+          30
+        ],
+        [
+          1594,
+          1071,
+          526,
+          809,
+          355
+        ]
+      ],
+      "balanced_accuracy": 0.7473934146422193,
+      "auroc_macro_ovr": 0.8848864572511708
+    }
+  },
+  "captioning": {
+    "caption": {
+      "bleu1": 0.2623757209037943,
+      "bleu4": 0.13016577591615225,
+      "meteor": 0.18446170925169544,
+      "rouge_l": 0.20588549251740124,
+      "cider_d": 0.26338789441235877,
+      "spice": 0.08547134537891576,
+      "bert_score_f1": 0.7164819668594943
+    },
+    "summary": {
+      "bleu1": 0.2590068511672014,
+      "bleu4": 0.13040968829582325,
+      "meteor": 0.18282818021643116,
+      "rouge_l": 0.20727028139825784,
+      "cider_d": 0.2691532155855753,
+      "spice": 0.0875495965479991,
+      "bert_score_f1": 0.7120779298287747
+    }
+  },
+  "decoding": {
+    "beam_width": 1
+  },
+  "generative": {
+    "ssim_iat_vs_original": 0.9797382555812238,
+    "ssim_gan_vs_original": 0.11869633331617416,
+    "fid_gan_vs_real": 431.86704636581374,
+    "fvd": null
+  },
+  "efficiency": {
+    "batch_size": 16,
+    "ms_per_sample": 5.431805624903063,
+    "samples_per_sec": 184.1008440020985
+  },
+  "ablation": {
+    "disable_lstm": false,
+    "disable_gan": false,
+    "disable_iat": false
+  },
+  "noise_std": 0.0,
+  "mask_caption": false
+}
+Wrote 14602 per-sample results -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\test_results.json
+Wrote 8 qualitative greedy-vs-beam samples -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\logs\qualitative_greedy_vs_beam.json
+Wrote qualitative result grid -> C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\outputs\plots\results_grid.png

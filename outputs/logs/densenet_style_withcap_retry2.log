@@ -1,0 +1,2 @@
+[densenet_style+caption] backbone_params: 2,258,009  total_params(+LMMDecoder): 19,514,733
+[densenet_style+caption] epoch 1/50  train_loss=282509.7923 train_acc=0.4175  val_loss=919055.3053 val_acc=0.3511

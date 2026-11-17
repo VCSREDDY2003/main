@@ -1,0 +1,76 @@
+{
+  "arch": "xgboost_keyword_features",
+  "n_params": null,
+  "note": "XGBoost trained on keyword/text-derived features (caption length, modality/pathology keyword hits), NOT deep pixel features -- no image-embedding feature pipeline exists in this project. No neural parameter count applies; n_estimators/max_depth reported instead.",
+  "n_estimators_cap": 200,
+  "actual_trees": 179,
+  "max_depth": 6,
+  "test_acc": 0.9592950062945866,
+  "classification": {
+    "5class": {
+      "accuracy": 0.9592950062945866,
+      "precision": 0.9597629863173036,
+      "recall": 0.9592847854997493,
+      "f1": 0.9594013485967507,
+      "precision_per_class": [
+        0.916463909164639,
+        0.9328231292517006,
+        0.9931093884582257,
+        0.9966555183946488,
+        0.0
+      ],
+      "recall_per_class": [
+        0.9487825356842989,
+        0.9210747271200672,
+        0.9672818791946308,
+        1.0,
+        0.0
+      ],
+      "f1_per_class": [
+        0.9323432343234324,
+        0.9269117025771019,
+        0.9800254993625159,
+        0.998324958123953,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          1130,
+          58,
+          3,
+          0,
+          0
+        ],
+        [
+          85,
+          1097,
+          5,
+          4,
+          0
+        ],
+        [
+          18,
+          21,
+          1153,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1192,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "balanced_accuracy": 0.9592847854997493
+    }
+  }
+}

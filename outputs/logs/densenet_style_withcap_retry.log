@@ -1,0 +1,18 @@
+[densenet_style+caption] backbone_params: 2,258,009  total_params(+LMMDecoder): 19,514,733
+Traceback (most recent call last):
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py", line 256, in <module>
+    main()
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py", line 231, in main
+    train_loss, train_acc = run_train_epoch(model, train_loader, device, optimizer)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\PD\IMAGECAPTION CODE\conference\proposed_model\new_IAT\feature_pipeline\train_baseline_with_caption.py", line 112, in run_train_epoch
+    l_cls = F.cross_entropy(class_logits, labels)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kalya\anaconda3\Lib\site-packages\torch\nn\functional.py", line 3479, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
